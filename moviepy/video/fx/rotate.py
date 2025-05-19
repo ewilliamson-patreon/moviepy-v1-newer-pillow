@@ -38,9 +38,9 @@ def rotate(clip, angle, unit='deg', resample="bicubic", expand=True):
       Only applIf False, the clip will maintain the same True, the clip will be resized so that the whole
     """
     
-    resample = {"bilinear": Image.BILINEAR,
-                "nearest": Image.NEAREST,
-                "bicubic": Image.BICUBIC}[resample]
+    resample = {"bilinear": Image.Resampling.BILINEAR,
+                "nearest": Image.Resampling.NEAREST,
+                "bicubic": Image.Resampling.BICUBIC}[resample]
 
     if not hasattr(angle, '__call__'):
         # if angle is a constant, convert to a constant function
