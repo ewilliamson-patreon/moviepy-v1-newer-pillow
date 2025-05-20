@@ -39,11 +39,11 @@ def rotate(clip, angle, unit='deg', resample="bicubic", expand=True):
     """
 
     if not hasattr(angle, '__call__'):
-      resample = {
-          "bilinear": Image.BILINEAR,
-          "nearest": Image.NEAREST,
-          "bicubic": Image.BICUBIC,
-      }[resample]
+        resample = {
+            "bilinear": Image.BILINEAR,
+            "nearest": Image.NEAREST,
+            "bicubic": Image.BICUBIC,
+        }[resample]
 
         # if angle is a constant, convert to a constant function
         a = +angle
