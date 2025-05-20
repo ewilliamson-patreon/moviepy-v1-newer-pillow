@@ -71,7 +71,7 @@ requires = [
     "numpy; python_version>='2.7'",
     'requests>=2.8.1,<3.0',
     'proglog<=1.0.0',
-    "pillow>=9.0.0",
+    "pillow>=9.0.1",
     ]
 
 optional_reqs = [
